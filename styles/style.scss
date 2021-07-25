@@ -287,4 +287,62 @@ p {
     }
 }
 
+//  PRODUCTS
+.products {
+    background: $secondaryColorLight;
+    margin-bottom: 2rem;
 
+    .products-info, .products-inventory {
+        padding: 2rem 0;
+    }
+
+    .product-text {
+        color: $secondayColor;
+        max-width: 26rem;
+    }
+
+    .product-img {
+        border-radius: $radius;
+        margin-bottom: 2rem;
+        height: 17rem;
+        object-fit: cover;
+    }
+
+    .product-price {
+        color: $primaryColor;
+    }
+}
+
+//product mediaq
+@media screen and (min-width: 768px){
+    //2 column layout
+    .product{
+        float: left;
+        width: 50%;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    //3 column layout
+    .product {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .product-info {
+        float: left;
+        width: 30%;
+    }
+
+    .product-inventory {
+        float: left;
+        width: 70%;
+    }
+
+    .product {
+        margin-bottom: 0;
+        padding: 0 1.1rem;
+    }
+}

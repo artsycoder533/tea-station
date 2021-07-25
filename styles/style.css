@@ -249,4 +249,59 @@ p {
     padding: 2rem;
   }
 }
+
+.products {
+  background: #f1f5f8;
+  margin-bottom: 2rem;
+}
+
+.products .products-info, .products .products-inventory {
+  padding: 2rem 0;
+}
+
+.products .product-text {
+  color: #617d98;
+  max-width: 26rem;
+}
+
+.products .product-img {
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products .product-price {
+  color: #678e3e;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-info {
+    float: left;
+    width: 30%;
+  }
+  .product-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    margin-bottom: 0;
+    padding: 0 1.1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
