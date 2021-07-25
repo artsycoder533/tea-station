@@ -116,6 +116,13 @@ p {
     }
 }
 
+.clearfix::after, .clearfix::before {
+    content: "";
+    //to start elements on a new line, because float just keeps everything inline
+    clear: both;
+    display: table; 
+}
+
 //HEADER
 .header {
     min-height: 100vh;

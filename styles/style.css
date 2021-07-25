@@ -93,6 +93,12 @@ p {
   background: #beed8c;
 }
 
+.clearfix::after, .clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .header {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/main-bcg.jpeg) center/cover no-repeat fixed;
