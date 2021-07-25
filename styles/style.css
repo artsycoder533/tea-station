@@ -133,4 +133,54 @@ p {
   background: -webkit-gradient(linear, right top, left top, from(#678e3e), color-stop(#e9b949), to(#678e3e));
   background: linear-gradient(to left, #678e3e, #e9b949, #678e3e);
 }
+
+.skills {
+  background: #f1f5f8;
+}
+
+.skills .skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.skills .skill:hover {
+  background: #fff;
+  -webkit-box-shadow: 0 2px #678e3e;
+          box-shadow: 0 2px #678e3e;
+}
+
+.skills .skill:hover .skill-icon {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.skills .skill .skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: inline-block;
+  color: #678e3e;
+}
+
+.skills .skill .skill-text {
+  color: #617d98;
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    width: 25%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

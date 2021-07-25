@@ -164,3 +164,53 @@ p {
     height: 0.5rem;
     background: linear-gradient(to left, $primaryColor, #e9b949, $primaryColor);
 }
+
+//SKILLS
+.skills {
+    background: $secondaryColorLight;
+
+    .skill {
+        padding: 2.5rem 0;
+        text-align: center;
+        transition: $transition;
+
+        &:hover {
+            background: $white;
+            box-shadow: 0 2px $primaryColor;
+            // border-bottom: 2px solid $primaryColor;
+
+            .skill-icon {
+                transform: translateY(-5px);
+            }
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            transition: $transition;
+            // make this display block because span is an inline-element so the margin set above isnt respected
+            display: inline-block;
+            color: $primaryColor;
+        }
+    
+        .skill-text {
+            color: $secondayColor;
+            max-width: 17rem;
+            margin: 0 auto;
+        }
+    }
+}
+
+//MEDIA QUERIES
+@media screen and (min-width: 576px){
+    .skill {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .skill {
+        width: 25%;
+    }
+}
