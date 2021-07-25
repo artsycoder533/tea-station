@@ -123,6 +123,32 @@ p {
     display: table; 
 }
 
+.section-center {
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+
+    h3 {
+        font-family: $secondaryFont;
+        color: $primaryColor;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+// MEDIA QUERIES SECTION-CENTER CONTAINER?
+@media screen and (min-width: 992px){
+    .section-center {
+        width: 95vw;
+        padding: 4rem 1rem;
+    }
+}
+
 //HEADER
 .header {
     min-height: 100vh;
@@ -208,16 +234,57 @@ p {
     }
 }
 
-//MEDIA QUERIES
+//MEDIA QUERIES SKILL
 @media screen and (min-width: 576px){
-    .skill {
+    .skills {
         float: left;
         width: 50%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .skill {
+    .skills {
         width: 25%;
     }
 }
+
+//ABOUT
+.about-img, .about-info {
+    padding: 2rem 0;
+}
+
+.about-picture-container {
+    background: $primaryColor;
+    border: 0.5rem solid $primaryColor;
+    max-width: 30rem;
+    overflow: hidden;
+
+    
+
+    .about-picture {
+        transition: $transition;
+
+        &:hover  {
+            opacity: 0.5;
+            transform: scale(1.2);
+        }
+    }    
+}
+
+.about-text {
+    max-width: 26rem;
+    color: $secondayColor;
+}
+
+@media screen and (min-width: 992px){
+    .about-img, .about-info {
+        float: left;
+        width: 50%;
+    }
+
+    .about-info {
+        padding: 2rem;
+    }
+}
+
+
