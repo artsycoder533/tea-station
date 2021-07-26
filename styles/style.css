@@ -291,11 +291,11 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .product-info {
+  .products-info {
     float: left;
     width: 30%;
   }
-  .product-inventory {
+  .products-inventory {
     float: left;
     width: 70%;
   }
