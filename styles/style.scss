@@ -5,7 +5,7 @@
 $primaryColor: #678e3e;
 $primaryColorLight: #beed8c;
 $secondaryColorDark: #102a42;
-$secondayColor: #617d98;
+$secondaryColor: #617d98;
 $secondaryColorLight: #f1f5f8;
 $white: #fff;
 $primaryFont: "Catamaran", sans-serif;
@@ -227,7 +227,7 @@ p {
         }
     
         .skill-text {
-            color: $secondayColor;
+            color: $secondaryColor;
             max-width: 17rem;
             margin: 0 auto;
         }
@@ -273,7 +273,7 @@ p {
 
 .about-text {
     max-width: 26rem;
-    color: $secondayColor;
+    color: $secondaryColor;
 }
 
 @media screen and (min-width: 992px){
@@ -297,7 +297,7 @@ p {
     }
 
     .product-text {
-        color: $secondayColor;
+        color: $secondaryColor;
         max-width: 26rem;
     }
 
@@ -313,7 +313,7 @@ p {
     }
 }
 
-//product mediaq
+//PRODUCT MEDIA QUERIES
 @media screen and (min-width: 768px){
     //2 column layout
     .product{
@@ -344,5 +344,79 @@ p {
     .product {
         margin-bottom: 0;
         padding: 0 1.1rem;
+    }
+}
+
+//SERVICES SECTION
+.services-title {
+    margin-top: 4rem;
+    //negative margin because another class already added margin
+    margin-bottom: -4rem;
+    text-align: center;
+
+    // h3 {
+    //     font-family: $secondaryFont;
+
+    // }
+    
+}
+
+.service-card {
+    margin: 2rem 0;
+    background: $secondaryColorLight;
+    border-radius: $radius;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: $transition;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-img {
+        height: 17rem;
+        object-fit: cover;
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
+    }
+
+    .service-info {
+        text-align: center;
+        padding: 3rem 1rem 2.5rem 1rem;
+
+        p {
+            max-width: 20rem;
+            color: $secondaryColor;
+            margin: 0 auto;
+        }
+
+        .service-btn {
+            font-size: 0.75;
+            text-transform: capitalize;
+            padding: 0.375 0.5rem;
+            border-radius: $radius;
+            font-weight: 400;
+            margin-top: 1.25rem;
+        }
+        
+    }
+}
+
+//SERVICES MEDIA QUERY
+@media screen and (min-width: 768px){
+    .service-card {
+        float: left;
+        // width x 2 + margin = 100%;
+        width: 45%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .service-card {
+        float: left;
+        // width x 3 + margin = 100%;
+        width: 30%;
+        margin-right: 3.33%;
     }
 }
