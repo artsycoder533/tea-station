@@ -311,6 +311,11 @@ p {
   text-align: center;
 }
 
+.services-title h3 {
+  font-family: "Grand Hotel", cursive;
+  color: #678e3e;
+}
+
 .service-card {
   margin: 2rem 0;
   background: #f1f5f8;
@@ -356,6 +361,23 @@ p {
   margin-top: 1.25rem;
 }
 
+.service-image-container {
+  position: relative;
+}
+
+.service-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 2rem;
+  color: #678e3e;
+  background: #beed8c;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border: 0.375 solid #f1f5f8;
+}
+
 @media screen and (min-width: 768px) {
   .service-card {
     float: left;
@@ -369,6 +391,107 @@ p {
     float: left;
     width: 30%;
     margin-right: 3.33%;
+  }
+}
+
+.contact {
+  background: #f1f5f8;
+}
+
+.contact .contact-form, .contact .contact-info {
+  margin: 1rem o;
+}
+
+.contact .contact-item {
+  margin-bottom: 1.75rem;
+}
+
+.contact .contact-title {
+  color: #678e3e;
+  font-weight: none;
+}
+
+.contact .contact-text {
+  text-transform: uppercase;
+}
+
+.contact .contact-form {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  max-width: 35rem;
+}
+
+.contact .contact-form:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact .contact-form h3 {
+  padding-top: 1.5rem;
+  color: #617d98;
+}
+
+.contact .contact-form .form-group {
+  padding: 1rem 1.5rem;
+}
+
+.contact .contact-form .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: #f1f5f8;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.contact .contact-form .form-control ::-webkit-input-placeholder {
+  font-family: "Catamaran", sans-serif;
+  color: #102a42;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.contact .contact-form .form-control :-ms-input-placeholder {
+  font-family: "Catamaran", sans-serif;
+  color: #102a42;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.contact .contact-form .form-control ::-ms-input-placeholder {
+  font-family: "Catamaran", sans-serif;
+  color: #102a42;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.contact .contact-form .form-control ::placeholder {
+  font-family: "Catamaran", sans-serif;
+  color: #102a42;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.contact .contact-form .submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .contact .contact-form, .contact .contact-info {
+    width: 50%;
+    float: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -353,12 +353,11 @@ p {
     //negative margin because another class already added margin
     margin-bottom: -4rem;
     text-align: center;
+}
 
-    // h3 {
-    //     font-family: $secondaryFont;
-
-    // }
-    
+.services-title h3 {
+    font-family: $secondaryFont;
+    color: $primaryColor;
 }
 
 .service-card {
@@ -402,6 +401,23 @@ p {
     }
 }
 
+//TO POSITION ICONS
+.service-image-container {
+    position: relative;
+}
+
+.service-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 2rem;
+    color: $primaryColor;
+    background: $primaryColorLight;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    border: 0.375 solid $secondaryColorLight;
+}
+
 //SERVICES MEDIA QUERY
 @media screen and (min-width: 768px){
     .service-card {
@@ -420,3 +436,88 @@ p {
         margin-right: 3.33%;
     }
 }
+
+//CONTACT SECTION
+.contact {
+    background: $secondaryColorLight;
+
+    .contact-form, .contact-info {
+        margin: 1rem o;
+    }
+
+    .contact-item {
+        margin-bottom: 1.75rem;
+    }
+
+    .contact-title {
+        color: $primaryColor;
+        font-weight: none;
+    }
+
+    .contact-text {
+        text-transform: uppercase;
+    }
+
+    .contact-form {
+        background: $white;
+        border-radius: $radius;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: $transition;
+        max-width: 35rem;
+
+        &:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            padding-top: 1.5rem;
+            color: $secondaryColor;
+        }
+
+        .form-group {
+            padding: 1rem 1.5rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border: none;
+            margin-bottom: 1.25rem;
+            background: $secondaryColorLight;
+            border-radius: $radius;
+            text-transform: uppercase;
+            letter-spacing: $spacing;
+
+            //include this because some browsers the placeholder doesnt automatically inherit the style so you have to specify just to make sure
+            ::placeholder {
+                font-family: $primaryFont;
+                color: $secondaryColorDark;
+                text-transform: uppercase;
+                letter-spacing: $spacing;
+            }
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
+        }
+    }
+
+    //MEDIA QUERIES
+    @media screen and (min-width: 992px){
+    .contact-form, .contact-info {
+        width: 50%;
+        float: left;
+    }
+}
+}
+
+
+
+
+//FOOTER

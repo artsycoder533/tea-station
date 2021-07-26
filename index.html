@@ -155,7 +155,7 @@
     <!-- END OF PRODUCTS -->
 
     <!-- SERVICES -->
-    <section class="service">
+    <section class="services">
       <!-- SECTION TITLE -->
       <div class="section-title services-title">
         <h3>explore</h3>
@@ -166,10 +166,12 @@
         <!-- SINGLE CARD -->
         <article class="service-card">
           <!-- IMAGE CONTAINER-->
-          <div class="service-image-container">
-            <img src="./images/product-1.jpeg" alt="single service" class="service-img">
+          <div class="service-img-container">
+            <!-- IMG CONTAINER -->
+            <img src="./images/product-1.jpeg" alt="single service" class="service-img"/>
             <!-- SERVICE ICON -->
             <span class="service-icon">
+              <!-- fa-fw creates icons as fixed width -->
               <i class="fas fa-mortar-pestle fa-fw"></i>
             </span>
           </div>
@@ -206,7 +208,7 @@
             <img src="./images/product-3.jpeg" alt="single service" class="service-img">
             <!-- SERVICE ICON -->
             <span class="service-icon">
-              <i class="fas fa-mug-hot fa-fw"></i>
+              <i class="fas fa-mug-hot fa-fw hi"></i>
             </span>
           </div>
           <!-- SERVICE INFO -->
@@ -219,7 +221,80 @@
         <!-- END OF SINGLE CARD -->
       </div>
     </section>
+    <!-- END OF SERVICES -->
     
+    <!-- CONTACT FORM -->
+    <section class="contact">
+      <div class="section-center clearfix">
+        <!-- CONTACT INFO -->
+        <article class="contact-info">
+          <!-- CONTACT ITEM -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              address
+            </h4>
+            <h4 class="contact-text">
+              523 N Fairfax Ave <br>
+              Los Angeles, CA 90210
+            </h4>
+          </div>
+          <!-- END OF CONTACT ITEM -->
+          <!-- CONTACT ITEM -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              email
+            </h4>
+            <h4 class="contact-text">
+              email@email.com
+            </h4>
+          </div>
+          <!-- END OF CONTACT ITEM -->
+          <!-- CONTACT ITEM -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              phone
+            </h4>
+            <h4 class="contact-text">
+              (555) 555-5555
+            </h4>
+          </div>
+          <!-- END OF CONTACT ITEM -->
+        </article>
+        <!-- CONTACT FORM -->
+        <article class="contact-form">
+          <h3>contact us</h3>
+          <form action="">
+            <div class="form-group">
+              <!-- INPUTS -->
+              <input type="text" name="name" placeholder="name" class="form-control">
+              <input type="email" name="email" placeholder="email" class="form-control">
+              <textarea name="message" placeholder="message" class="form-control" rows="5"></textarea>
+            </div>
+            <button type="submit" class="submit-btn btn">submit</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- END OF CONTACT FORM -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="center">
+        <div class="social-icons">
+          <!-- SOCIAL ICON -->
+          <a href="#" class="social-icon"></a>
+        </div>
+      </section>
+    </footer>
 
     <script src="app.js"></script>
   </body>
