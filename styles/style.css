@@ -122,6 +122,164 @@ p {
   }
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes slideFromRight {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .nav-btn {
   position: fixed;
   top: 5%;
@@ -130,6 +288,8 @@ p {
   color: #678e3e;
   z-index: 1;
   cursor: pointer;
+  -webkit-animation: bounce 2s ease infinite;
+          animation: bounce 2s ease infinite;
 }
 
 .navbar {
@@ -218,12 +378,16 @@ p {
 .header .banner h2 {
   font-family: "Grand Hotel", cursive;
   color: #678e3e;
+  -webkit-animation: slideFromRight 5s ease-in-out 1;
+          animation: slideFromRight 5s ease-in-out 1;
 }
 
 .header .banner h1 {
   color: #fff;
   text-transform: uppercase;
   margin: 1.25rem 0 2rem 0;
+  -webkit-animation: slideFromLeft 5s ease-in-out 1;
+          animation: slideFromLeft 5s ease-in-out 1;
 }
 
 .header .banner .banner-btn {
@@ -231,6 +395,8 @@ p {
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+  -webkit-animation: show 5s linear 1;
+          animation: show 5s linear 1;
 }
 
 .content-divider {
